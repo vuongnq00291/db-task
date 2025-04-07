@@ -71,11 +71,11 @@ random-facts-api/
 │   │   │           │   ├── ErrorResponse.kt             # Error response model
 │   │   │           │   ├── GlobalExceptionMapper.kt     # Global exception handler
 │   │   │           │   └── NotFoundException.kt         # Custom exception
-│   │   │           ├── model/                           # Data models
-│   │   │           │   ├── Fact.kt                      # Fact data model
-│   │   │           │   ├── FactResponse.kt              # API response model
-│   │   │           │   ├── FactStatistics.kt            # Statistics model
-│   │   │           │   └── ShortenedFact.kt             # Shortened fact model
+│   │   │           ├── dto/                             # dtos
+│   │   │           │   ├── ExternalFact.kt              # Fact from external api
+│   │   │           │   ├── FactDetailDto.kt             # Fact api response dto
+│   │   │           │   ├── FactAccessStatsDto.kt        # Statistics dto
+│   │   │           │   └── ShortenedFactDto.kt          # Shortened fact dto
 │   │   │           └── service/                         # Business logic
 │   │   │               ├── CacheService.kt              # In-memory cache for facts
 │   │   │               ├── FactService.kt               # Fact operations
